@@ -1,0 +1,439 @@
+/* ===========================
+Index Of css
+
+01.  Common CSS
+02.  Header CSS
+03.  Hero CSS
+04.  What we can CSS
+05.  Flipside CSS
+06.  Mission CSS
+07.  CSS
+08.  CSS
+09.  CSS
+10.  CSS
+11.  CSS
+12.  CSS
+13.  CSS
+
+========================== */
+
+
+/*===========================
+    01. Common CSS
+===========================*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700;9..40,1000&display=swap');
+
+:root {
+    --primary-color: #F45100;
+    --secondary-color: #333333;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+hr {
+    opacity: 0.2;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 1000;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 46px;
+    font-weight: 1000;
+    line-height: 1;
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+/*===========================
+    02. Header CSS
+===========================*/
+.navbar {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 65%, rgba(244, 81, 0, 1) 65%);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 5px;
+    margin: 0 15px;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-links a:hover {
+    color: var(--primary-color);
+    transition: ease-in-out 0.3s;
+}
+
+.primary-btn-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*===========================
+    03. Hero CSS
+===========================*/
+.hero {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 65%, rgba(244, 81, 0, 1) 65%);
+}
+
+.hero img {
+    width: 85%;
+}
+
+body>section.hero.py-5>div>div>div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+/*===========================
+    04. What We Can CSS
+===========================*/
+.what-we-can h3 {
+    font-size: 24px;
+}
+
+/*===========================
+    05. Flipside CSS
+===========================*/
+.flipside {
+    background: url('../images/CTA-background-v6.jpg') no-repeat center center / cover;
+    color: #fff;
+
+}
+
+.flipside .container {
+    width: 60%;
+    text-align: center;
+}
+
+.flipside .container h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flipside .container p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.potential {
+    background: #F5F5F5;
+}
+
+.growth {
+    background: #F5F5F5;
+}
+
+
+/*===========================
+    06. Mission CSS
+===========================*/
+.mission .container h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission .container p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%;
+}
+
+.c-path {
+    background-color: #333333;
+    clip-path: polygon(0 0, 100% 85%, 100% 100%, 0% 100%);
+    min-height: 100px;
+    margin-top: 80px;
+}
+
+/* Contact Form */
+.contact-form {
+    background: #fff;
+    padding: 65px;
+    border-radius: 15px;
+    margin-bottom: 60px;
+    color: var(--secondary-color);
+    margin-top: -250px !important;
+    z-index: 999;
+    position: relative;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+.form-control {
+    width: 95%;
+}
+
+.form-control input[type=text],
+input[type=email],
+input[type=tel] {
+    font: inherit;
+    font-size: 14px;
+    padding: 14px 24px;
+    margin: 5px 10px 5px 0;
+    border: none;
+    background: #f5f5f5;
+}
+
+body>section.footer.py-5.pb-2>div:nth-child(1)>div.contact-form>div>div:nth-child(1)>div>div:nth-child(2)>input:nth-child(2),
+body>section.footer.py-5.pb-2>div:nth-child(1)>div.contact-form>div>div:nth-child(1)>div>div:nth-child(1)>input:nth-child(2) {
+    margin-right: 0;
+}
+
+textarea#message {
+    padding: 14px 24px;
+    margin: 5px 10px 5px 0;
+    border: none;
+    background: #f5f5f5;
+    font: inherit;
+    font-size: 14px;
+}
+
+.form-control input[type=submit] {
+    border: none;
+    font: inherit;
+    width: 100%;
+}
+
+.form-control input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.contact-us .flex {
+    justify-content: start;
+    align-content: center;
+    color: var(--secondary-color);
+}
+
+.contact-us .flex img {
+    display: block;
+    width: 30px;
+    margin-right: 8px;
+}
+
+/* Footer CSS */
+.footer {
+    background: #333333;
+    color: #fff;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer li {
+    padding: 5px;
+    margin: 0 15px;
+}
+
+.footer i {
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: end;
+}
+
+.footer .grid-3 {
+    align-items: center;
+
+}
+
+.footer .credit .flex {
+    justify-content: space-between;
+}
+
+.footer .credit p {
+    font-size: 16px;
+}
+
+.grid-menu a:hover {
+    color: var(--primary-color);
+    transition: ease-in-out 0.3s;
+}
+
+.social-icons i:hover {
+    color: var(--primary-color);
+    transition: ease-in-out 0.3s;
+}
+
+/* Tablet Responsive */
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 20px !important;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .flipside .container {
+        width: unset;
+    }
+
+    .potential img,
+    .innovation img,
+    .growth img {
+        width: 100%;
+    }
+
+    .mission {
+        width: 100% !important;
+    }
+
+    .mission h2,
+    .mission p {
+        width: 100% !important;
+    }
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 500px) {
+    .navbar {
+        background: unset;
+    }
+
+    .navbar .primary-btn-div a {
+        margin-top: 10px;
+        background: var(--primary-color);
+        color: #fff;
+    }
+
+    .navbar .grid-3 {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 1fr !important;
+        text-align: center;
+    }
+
+    .hero {
+        background: unset;
+    }
+
+    .hero .grid {
+        /* grid-template-columns: 1fr !important; */
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hero .grid img {
+        width: 100%;
+    }
+
+    .funding {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .funding .container .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .funding .container .grid .col-2-img {
+        display: grid;
+    }
+
+    .what-we-can .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .what-we-can .grid-3>div:nth-child(2) {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .potential .grid,
+    .growth .grid {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .innovation .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form {
+        padding: 45px 35px !important;
+    }
+
+    .contact-form .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form .heading {
+        text-align: center !important;
+        margin: auto !important;
+    }
+
+    .contact-form .heading p {
+        width: 60%;
+        margin: auto !important;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .footer .grid-3 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer .grid-menu {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer .credit .flex {
+        flex-direction: column;
+    }
+}
